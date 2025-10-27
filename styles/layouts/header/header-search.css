@@ -2,7 +2,7 @@
   display: flex;
   position: relative;
   width: 100%;
-  max-width: 500px;
+  max-width: 520px;
   height: 40px;
 }
 
@@ -63,6 +63,7 @@
 
 .header__search-input:not(:placeholder-shown) + label {
   transform: translateY(-30px);
+  opacity: 0.7;
 }
 
 .header__search-label {

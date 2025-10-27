@@ -6,5 +6,6 @@
   position: sticky;
   top: 0;
   z-index: 20;
-  background-color: inherit;
+  background-color: var(--color-white);
+  transition-duration: 0.2s;
 }

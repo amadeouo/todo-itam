@@ -1,7 +1,6 @@
 .todos-wrapper-form {
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
 
 .form {
@@ -21,6 +20,10 @@
     background-color: var(--color-purple);
     padding-inline: 17px;
   }
+}
+
+.form--checked {
+  opacity: 0.6;
 }
 
 .form-input {
@@ -76,12 +79,18 @@
   align-items: center;
   border: 1px solid transparent;
   border-radius: var(--border-radius-big);
-
-  &:hover {
-    border: var(--border-purple);
-  }
 }
 
-.form-buttons svg path {
+.form-buttons button svg path {
   stroke: var(--color-black);
 }
+
+.form-buttons-delete:hover svg path {
+  stroke: #E50000;
+}
+
+.form-buttons-edit:hover svg path {
+  stroke: var(--color-purple);
+}
+
+

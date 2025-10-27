@@ -1,8 +1,14 @@
 .todos {
-  position: relative;
   display: flex;
   justify-content: center;
+  overflow: scroll;
   margin-top: 30px;
+  margin-bottom: 100px;
+  height: 600px;
+}
+
+.todos::-webkit-scrollbar {
+  display: none;
 }
 
 
