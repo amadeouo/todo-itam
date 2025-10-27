@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 500;
+  background-color: var(--color-bg);
+  transition-duration: 0.2s;
+}
+
+button {
+  transition-duration: var(--transition-duration);
+}
+
+.container {
+  max-width: 750px;
+}
+
+.container-small {
+  max-width: 520px;
+}
+
+.todo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.small-width {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.small-width-error-message {
+  font-size: 30px;
+  text-align: center;
+}
