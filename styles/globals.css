@@ -43,3 +43,9 @@ button {
   text-align: center;
   color: var(--color-black);
 }
+
+.button-wrappers {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

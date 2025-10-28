@@ -6,5 +6,6 @@
 @import "layouts/header";
 @import "layouts/todos";
 @import "layouts/todos-add";
+@import "layouts/notification-delete";
 
 @import "media.css";

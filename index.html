@@ -103,11 +103,30 @@
       </div>
       <div class="todos-wrapper-form container-small" data-js-todo-todos-wrapper></div>
     </main>
-    <button class="add-todo__button" data-js-todo-add-todos>
-      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 22.5C10.5 22.8978 10.658 23.2794 10.9393 23.5607C11.2206 23.842 11.6022 24 12 24C12.3978 24 12.7794 23.842 13.0607 23.5607C13.342 23.2794 13.5 22.8978 13.5 22.5V13.5H22.5C22.8978 13.5 23.2794 13.342 23.5607 13.0607C23.842 12.7794 24 12.3978 24 12C24 11.6022 23.842 11.2206 23.5607 10.9393C23.2794 10.658 22.8978 10.5 22.5 10.5H13.5V1.5C13.5 1.10218 13.342 0.720644 13.0607 0.43934C12.7794 0.158035 12.3978 0 12 0C11.6022 0 11.2206 0.158035 10.9393 0.43934C10.658 0.720644 10.5 1.10218 10.5 1.5V10.5H1.5C1.10218 10.5 0.720644 10.658 0.43934 10.9393C0.158035 11.2206 0 11.6022 0 12C0 12.3978 0.158035 12.7794 0.43934 13.0607C0.720644 13.342 1.10218 13.5 1.5 13.5H10.5V22.5Z" fill="#F7F7F7"/>
-      </svg>
-    </button>
+    <div class="button-wrappers">
+      <button class="notification-delete" data-js-todo-notification-delete> <!--is-visible-notification-->
+        <div class="notification-delete__content">
+          <div class="notification-delete__left">
+            <span class="notification-delete__counter-number" data-js-todo-number-counter>4</span>
+            <svg class="notification-delete__counter-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="14" cy="14" r="13" stroke="white" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="notification-delete__right">
+            <span class="notification-delete__text">UNDO</span>
+            <svg class="notification-delete__back-icon " width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 5.4394V11.4318C14.9993 12.1127 14.7236 12.7656 14.2333 13.247C13.743 13.7285 13.0782 13.9993 12.3848 14H7.15436V13.1439H12.3848C12.847 13.1433 13.29 12.9627 13.6168 12.6417C13.9437 12.3208 14.1276 11.8857 14.1283 11.4318V5.4394C14.1276 4.98553 13.9437 4.55044 13.6168 4.2295C13.29 3.90857 12.847 3.72796 12.3848 3.72728H1.66851L3.97513 5.99242L3.35881 6.59765L0 3.29925L3.35881 0L3.97513 0.605234L1.66851 2.87122H12.3848C13.0782 2.8719 13.743 3.1427 14.2333 3.62418C14.7236 4.10566 14.9993 4.75849 15 5.4394Z" fill="#F7F7F7"/>
+            </svg>
+          </div>
+        </div>
+      </button>
+      <button class="add-todo__button" data-js-todo-add-todos>
+        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 22.5C10.5 22.8978 10.658 23.2794 10.9393 23.5607C11.2206 23.842 11.6022 24 12 24C12.3978 24 12.7794 23.842 13.0607 23.5607C13.342 23.2794 13.5 22.8978 13.5 22.5V13.5H22.5C22.8978 13.5 23.2794 13.342 23.5607 13.0607C23.842 12.7794 24 12.3978 24 12C24 11.6022 23.842 11.2206 23.5607 10.9393C23.2794 10.658 22.8978 10.5 22.5 10.5H13.5V1.5C13.5 1.10218 13.342 0.720644 13.0607 0.43934C12.7794 0.158035 12.3978 0 12 0C11.6022 0 11.2206 0.158035 10.9393 0.43934C10.658 0.720644 10.5 1.10218 10.5 1.5V10.5H1.5C1.10218 10.5 0.720644 10.658 0.43934 10.9393C0.158035 11.2206 0 11.6022 0 12C0 12.3978 0.158035 12.7794 0.43934 13.0607C0.720644 13.342 1.10218 13.5 1.5 13.5H10.5V22.5Z" fill="#F7F7F7"/>
+        </svg>
+      </button>
+    </div>
+
   </div>
   <div class="small-width">
     <img
@@ -119,6 +138,5 @@
     />
     <span class="small-width-error-message">Your device is too small, please change it</span>
   </div>
-
 </body>
 </html>

@@ -7,7 +7,7 @@
   display: flex;
   flex-wrap: wrap;
   row-gap: 17px;
-  width: 100%;
+  width: 520px;
   justify-content: space-between;
   margin-bottom: 17px;
   color: var(--color-black);
@@ -19,6 +19,10 @@
     height: 1px;
     background-color: var(--color-purple);
     padding-inline: 17px;
+  }
+
+  &:hover .form-buttons {
+    display: flex;
   }
 }
 
@@ -50,12 +54,28 @@
   transition-duration: 0.2s;
 }
 
-.form-input__title {
+.form-input__title, .form-input__edit {
   width: 400px;
+  padding: 7px;
   font-size: 20px;
   outline: none;
-  border: none;
+  border: 1px solid transparent;
 }
+
+.form-input__edit {
+  border: 1px solid var(--color-white);
+}
+
+.form-input__edit:focus {
+  border-color: var(--color-black);
+  border-radius: var(--border-radius-big);
+}
+
+.dark .form-input__edit {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
 
 .form-input__checkbox:checked + .form-input__title {
   color: var(--color-black);
@@ -65,7 +85,7 @@
 }
 
 .form-buttons {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   gap: 3px;
@@ -79,7 +99,18 @@
   align-items: center;
   border: 1px solid transparent;
   border-radius: var(--border-radius-big);
+
+  &:hover {
+    border: var(--border-purple);
+  }
 }
+
+.form-buttons .form-buttons-delete {
+  &:hover {
+    border: 1px solid #E50000;
+  }
+}
+
 
 .form-buttons button svg path {
   stroke: var(--color-black);
