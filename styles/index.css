@@ -3,9 +3,9 @@
 @import "variables.css";
 @import "globals.css";
 
-@import "layouts/header";
-@import "layouts/todos";
-@import "layouts/todos-add";
-@import "layouts/notification-delete";
+@import "layouts/header/index.css";
+@import "layouts/todos/index.css";
+@import "layouts/todos-add/index.css";
+@import "layouts/notification-delete/index.css";
 
 @import "media.css";
