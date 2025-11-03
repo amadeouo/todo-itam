@@ -45,7 +45,19 @@ button {
 }
 
 .button-wrappers {
+  position: fixed;
+  bottom: 50px;
+  right: calc((100vw - 750px) / 2 + 20px);
   display: flex;
   justify-content: flex-end;
+  z-index: 100;
   align-items: center;
 }
+
+/*.notification-delete {*/
+/*  position: relative;*/
+/*}*/
+
+/*.add-todo__button {*/
+/*  position: relative;*/
+/*}*/

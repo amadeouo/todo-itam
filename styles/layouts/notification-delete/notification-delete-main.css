@@ -6,7 +6,7 @@
   border: var(--border-purple);
   border-radius: var(--border-radius-big);
   background-color: var(--color-purple);
-  margin-right: 250px;
+  margin-right: 220px;
 }
 
 .notification-delete__content {
@@ -22,8 +22,8 @@
 
 .notification-delete__counter-icon {
   position: absolute;
-  left: 6px;
-  top: 5px;
+  left: 7px;
+  top: 12px;
 }
 
 .notification-delete__text {
